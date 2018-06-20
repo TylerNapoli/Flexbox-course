@@ -1,0 +1,77 @@
+body{
+background-color:lightcoral;
+color:royalblue;
+}
+#Page-title{
+background-color:lemonchiffon;
+padding:30px;
+font-size:50px;
+font-family:sans-serif;
+text-align:center;
+border:8px solid black;
+}
+.content{
+-webkit-transition: all 500ms ease-out 1s;
+-moz-transition: all 500ms ease-out 1s;
+-o-transition: all 500ms ease-out 1s;
+transition: all 500ms ease-out 1s;
+background-color:silver;
+padding:20px;
+font-family:Impact;
+width:200px;
+border-left:5px solid maroon;
+margin:20px;
+} 
+.content:hover{
+background-color:maroon;
+color:white;
+cursor:pointer;
+}     
+#Sub{
+Background-color:lemonchiffon;
+padding:20px;
+margin:30px;
+border-left:5px solid black;
+border-bottom:5px solid black;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+padding: 20px;
+margin: 50px;
+font-size: 1.2em;
+width: 200px;
+}
+#Info{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+align-items:center;
+}
+/*--Pseudo Classes*/
+a:link {
+color:darkmagenta;
+}
+a:visited {
+color:black;
+}
+a:hover{
+color:brown;
+}
+a:active{
+color:blue
+}
+.content-bullets{
+padding-left:40px;
+list-style:square;
+font-size:1.5em
+}
+#My-blocks{
+position: absolute;
+}
+.block{
+height:140px;
+width:250px;
+background-color:maroon;
+margin:20px;
+float:left;
+}
