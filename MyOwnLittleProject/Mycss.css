@@ -1,0 +1,107 @@
+html {
+    font-family: 'Oxygen', sans-serif;
+}
+body{
+    margin: 0px;
+    background-color: cadetblue
+}
+.navbar{
+    background: seagreen;
+}
+.navbar div{
+    display: none;
+}
+.navbar .toggle,
+.navbar .brand {
+    display: inline-block;
+}
+.navbar .link {
+    display: block;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+    background: rgb(27, 104, 60);
+    color: white;
+}
+.navbar .link:hover,
+.navbar .link:active {
+    color: rgb(27, 104, 60);
+    background: white;
+}
+.navbar .brand {
+    width: 10em;
+    text-align: center;
+    padding: 1em;
+    color: white;
+}
+.navbar a {
+    text-decoration: none;
+}
+.navbar .toggle {
+    padding: 1em;
+    color: black;
+}
+@media (min-width: 48em) {
+    .navbar {
+        display: flex;
+    }
+    .navbar div {
+        display: flex;
+    }
+    .navbar .left,
+    .navbar .right {
+        display: flex;
+        flex: 1;
+    }
+    .navbar .link {
+        width: auto;
+    }
+    .navbar .right {
+        justify-content: flex-end;
+    }
+    .navbar .toggle {
+        display: none;
+    }
+}
+@media (min-width: 48em) {
+    .navbar div {
+        display: flex;
+    }
+}@media (max-width: 48em) {
+    .navbar.active .toggle {
+        background: rgb(27, 104, 60);
+        color: white;
+    }
+    .navbar .brand {
+        text-align: left;
+    }
+    .navbar.active div {
+        display: block;
+    }
+}
+#pricing-table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.package {
+    -webkit-transition: background-color 500ms ease-out 1s;
+    -moz-transition: background-color 500ms ease-out 1s;
+    -o-transition: background-color 500ms ease-out 1s;
+    transition: background-color 500ms ease-out 1s;
+    background-color: #e8e8e8;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 20px;
+    margin: 50px;
+    font-size: 1.2em;
+    border-bottom: 10px solid  rgb(27, 104, 60);
+    width: 200px;
+}
+.package:hover {
+    background-color: rgb(27, 104, 60);
+    color: white;
+    cursor: pointer;
+}
